@@ -233,7 +233,7 @@ const getState = ({ getStore, setStore }) => {
 				let logUser = store.users2.find(item => {
 					return item.email == email && item.password == password;
 				});
-				fetch("https://3000-cc0fdc34-a023-4230-8b6e-8b6315447377.ws-us0.gitpod.io/login", {
+				fetch("https://3000-b598d4a4-b550-4f48-9647-c68992f1dab2.ws-us02.gitpod.io/login", {
 					method: "POST",
 					headers: { "Content-type": "application/json" },
 					body: JSON.stringify({
@@ -243,7 +243,7 @@ const getState = ({ getStore, setStore }) => {
 				})
 					.then(response => response.json())
 					.then(data => {
-						setStore({ login: data, logUser: logUser });
+						setStore({ login: data, logUser: data.id });
 					});
 
 				if (store.login.jwt) {

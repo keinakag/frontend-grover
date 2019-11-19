@@ -30,6 +30,19 @@ const injectContext = PassedComponent => {
 					store.users2 = data;
 					this.setState({ store });
 				});
+			fetch("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc", {
+				headers: {
+					"Content-type": "application/json",
+					authorization:
+						"Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYmVhZGY1YzUzMTNkMDgyNzI5OWI5NzY5NmYyODlhMCIsInN1YiI6IjVkZDQ0OTEwMzU2YTcxMDAxN2VkOGRhMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tPvMezqB7ee7kV42Z5Rqu1T0c7wWl5srBEtqzccI_DE"
+				}
+			})
+				.then(response => response.json())
+				.then(data => {
+					let { store } = this.state;
+					store.moviesList = data.results;
+					this.setState({ store });
+				});
 
 			// this.setState({ isModalOpen: false });
 			/**
