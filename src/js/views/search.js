@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Groverlogo from "../../img/groverlogo.png";
 import "../../styles/home.scss";
-import Video from "../component/video";
-import Videonav from "../component/videonav";
+
+import Searchbar from "../component/searchbar";
 import Searchbk from "../../img/searchbk.png";
 
 export class Search extends React.Component {
@@ -12,10 +12,7 @@ export class Search extends React.Component {
 		return (
 			<div className="container-fluid bk">
 				<div className="nav">
-					<Videonav />
-				</div>
-				<div>
-					<Video />
+					<Searchbar />
 				</div>
 			</div>
 		);

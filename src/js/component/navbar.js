@@ -16,11 +16,6 @@ class Navbar extends React.Component {
 							<a className="navbar-brand">
 								<img style={{ width: "10%", height: "10%" }} src={Groverlogo} />
 							</a>
-							<Link to={"/search"}>
-								<form className="form-inline my-1">
-									<i className="fas fa-search fa-2x text-white" />
-								</form>
-							</Link>
 
 							<ul className="navbar-nav ml-auto nav-flex-icons">
 								<li id="avatar" className="nav-item avatar dropdown">
