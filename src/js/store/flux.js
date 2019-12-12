@@ -8,7 +8,8 @@ const getState = ({ getStore, setStore }) => {
 			users: [],
 			login: [],
 			logUser: null,
-			movies: []
+			movies: [],
+			search: []
 		},
 		actions: {
 			searchMovie: searchInput => {
@@ -25,11 +26,8 @@ const getState = ({ getStore, setStore }) => {
 						}
 					}
 				)
-					.then(response => {
-						response.json();
-						console.log(response);
-					})
-					.then(data => console.log(data))
+					.then(response => response.json())
+					.then(data => setStore({ search: data.results }))
 					.catch(err => {
 						console.log(err);
 					});
