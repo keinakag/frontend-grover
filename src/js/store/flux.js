@@ -9,7 +9,8 @@ const getState = ({ getStore, setStore }) => {
 			login: [],
 			logUser: null,
 			movies: [],
-			search: []
+			search: [],
+			moviesList: []
 		},
 		actions: {
 			searchMovie: searchInput => {

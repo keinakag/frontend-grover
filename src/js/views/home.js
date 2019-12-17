@@ -20,7 +20,7 @@ export class Home extends React.Component {
 							</div>
 
 							<Jumbotron />
-							<div className="container-fluid ">
+							<div className="wrapper-search ">
 								<Searchbar />
 							</div>
 

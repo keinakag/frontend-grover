@@ -5,6 +5,7 @@ import Groverlogo from "../../img/groverlogo.png";
 import { Button } from "mdbreact";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
+import Searchbar from "./searchbar";
 
 class Navbar extends React.Component {
 	render() {
@@ -53,6 +54,7 @@ class Navbar extends React.Component {
 									</div>
 								</li>
 							</ul>
+							<Searchbar />
 						</nav>
 					);
 				}}
