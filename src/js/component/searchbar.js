@@ -32,7 +32,7 @@ export default class Searchbar extends React.Component {
 										className="btn btn-outline-secondary"
 										type="button"
 										id="button-addon2">
-										Button
+										<i className="fas fa-search fa-2x" />
 									</button>
 								</div>
 							</div>

@@ -17,10 +17,10 @@ export default class Cards extends React.Component {
 										store.moviesList.map((item, index) => {
 											return (
 												<div key={index} className="card mb-4">
-													<div className="card w-100 p-3 h-100 p-3">
+													<div className="card w-50 p-1 h-50 p-1">
 														<img
 															className="card-img-top"
-															src={"https://image.tmdb.org/t/p/w500" + item.poster_path}
+															src={"https://image.tmdb.org/t/p/w342" + item.poster_path}
 															alt="Card image cap"
 														/>
 														<a href="#!">

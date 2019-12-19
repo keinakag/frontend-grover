@@ -28,6 +28,16 @@ export default class Jumbotron extends React.Component {
 									</Link>
 									START WATCHING
 								</span>
+								<div
+									className="user_score_chart"
+									data-percent={70.0}
+									data-track-color="#204529"
+									data-bar-color="#21d07a">
+									<div className="percent">
+										<span className="icon icon-r70" />
+									</div>
+									<canvas height={60} width={60} />
+								</div>
 							</div>
 						</div>
 					</div>
