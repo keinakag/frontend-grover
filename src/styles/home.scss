@@ -1,6 +1,28 @@
 
+
+
+#infomovie
+ {
+ position: absolute;
+    top: 25px;
+    left: 848px;
+    width: 656px;
+    height: 100%;
+    color:#f8f9fa;
+}
+@media (max-width: 768px) {
+  #infomovie {
+    float: right;
+  }
+}
+.slider{
+    height: 600px !important;
+}
+
+
 #carrusel{
-    height: 900px;
+   height: 600px;
+    background: midnightblue;
 }
 
 .fa-envelope {

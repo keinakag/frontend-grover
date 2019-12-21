@@ -22,31 +22,20 @@ export class Search extends React.Component {
 								<Slider>
 									{store.moviesList.map((article, index) => {
 										const style = {
-											backgroundImage: `url(https://image.tmdb.org/t/p/w780${
+											backgroundImage: `url(https://image.tmdb.org/t/p/w300${
 												article.poster_path
 											})`,
 											backgroundRepeat: "no-repeat",
 											backgroundSize: "auto",
-											backgroundPosition: "center"
+											backgroundPosition: "500px"
 										};
 										return (
-											<div
-												style={style}
-												key={index}
-												className="row justify-content-center align-self-center">
-												<div className="row">
-													<div className=" col-6">
-														<h2>{article.title}</h2>
+											<div style={style} key={index} className="">
+												<div id="infomovie" className="">
+													<h2>{article.title}</h2>
 
-														<div>{article.overview}</div>
-
-														<span>
-															<a href="/movie/330457-frozen-ii">
-																<h2 className="9">Frozen II</h2>
-															</a>{" "}
-															<span className={article.release_date}>(2019)</span>
-														</span>
-													</div>
+													<div>{article.overview}</div>
+													<div>{article.vote_average}</div>
 												</div>
 											</div>
 										);

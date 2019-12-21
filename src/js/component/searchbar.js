@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { MDBBtn, MDBIcon } from "mdbreact";
 import { Context } from "../store/appContext";
 
 export default class Searchbar extends React.Component {
@@ -29,7 +29,7 @@ export default class Searchbar extends React.Component {
 								<div className="input-group-append">
 									<button
 										onClick={() => actions.searchMovie(this.state.searchInput)}
-										className="btn btn-outline-secondary"
+										className="btn-floating btn-lg btn-default"
 										type="button"
 										id="button-addon2">
 										<i className="fas fa-search fa-2x" />

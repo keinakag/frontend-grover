@@ -17,6 +17,7 @@ class Navbar extends React.Component {
 							<a className="navbar-brand">
 								<img style={{ width: "10%", height: "10%" }} src={Groverlogo} />
 							</a>
+							<Searchbar />
 
 							<ul className="navbar-nav ml-auto nav-flex-icons">
 								<li id="avatar" className="nav-item avatar dropdown">
@@ -32,6 +33,7 @@ class Navbar extends React.Component {
 											className="md-avatar rounded-circle size-1"
 										/>
 									</a>
+
 									<div
 										className="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
 										aria-labelledby="navbarDropdownMenuLink-55">
@@ -54,7 +56,6 @@ class Navbar extends React.Component {
 									</div>
 								</li>
 							</ul>
-							<Searchbar />
 						</nav>
 					);
 				}}

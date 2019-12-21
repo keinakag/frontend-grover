@@ -20,9 +20,6 @@ export class Home extends React.Component {
 							</div>
 
 							<Jumbotron />
-							<div className="wrapper-search ">
-								<Searchbar />
-							</div>
 
 							{store.search.length > 0 ? (
 								<SearchResult />
