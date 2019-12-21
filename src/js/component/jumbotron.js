@@ -34,7 +34,7 @@ export default class Jumbotron extends React.Component {
 											<div style={style} key={index} className="">
 												<div id="infomovie" className="">
 													<h2>{article.title}</h2>
-
+													<div>{article.vote_average}</div>
 													<div>{article.overview}</div>
 												</div>
 											</div>

@@ -1,3 +1,57 @@
+.search-box {
+  display: flex;
+  margin: 15px 0;
+  font-family: Roboto;
+  font-size: 18px;
+  max-width: 500px;
+  min-width: 80px;
+  height: 40px;
+  transition: all 100ms ease-in-out;
+}
+.search-box .textbox {
+  min-width: 80%;
+  border: 1px solid #bbb;
+  border-right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.search-box .textbox input[type=text] {
+  width: 100%;
+  border: 0;
+  padding: 8px 10px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  outline: none;
+  background: transparent;
+}
+.search-box .textboxinput[type=text]:focus {
+  background: #fff;
+}
+.search-box button {
+  display: inline-flex;
+  border: none;
+  background: #42afe3;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 0 3px 3px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  border: 3px solid #42afe3;
+  font-size: 14px;
+  cursor: pointer;
+}
+.search-box button .icon {
+  display: inline-block;
+  background: url("https://www.google.com.au/images/nav_logo242.png") no-repeat -107px -55px;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}
+.search-box button:hover {
+  background: #4281e3;
+  border: 3px solid #4281e3;
+}
 
 
 

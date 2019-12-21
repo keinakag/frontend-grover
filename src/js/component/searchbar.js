@@ -8,35 +8,75 @@ export default class Searchbar extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			searchboxStyle: {
+				width: "120px",
+				background: "#eee"
+			}
+		};
+
+		this._handleTextFocus = this._handleTextFocus.bind(this);
+		this._handleClick = this._handleClick.bind(this);
+		this._handleTextBlur = this._handleTextBlur.bind(this);
+		this.state = {
 			searchInput: null
 		};
 	}
+
+	_handleTextFocus(e) {
+		e.preventDefault();
+
+		this.setState({
+			searchboxStyle: {
+				width: "100%",
+				background: "#fff"
+			}
+		});
+	}
+
+	_handleTextBlur(e) {
+		e.preventDefault();
+		if (!this._searchBox.value && !this._searchBox.value.length > 0)
+			this.setState({
+				searchboxStyle: {
+					width: "120px",
+					background: "#eee"
+				}
+			});
+	}
+
+	_handleClick(e) {
+		e.preventDefault();
+	}
+
 	render() {
 		return (
 			<Context.Consumer>
 				{({ store, actions }) => {
 					return (
-						<>
-							<div className="input-group mb-3">
-								<input
-									onChange={e => this.setState({ searchInput: e.target.value })}
-									type="text"
-									className="form-control"
-									placeholder="Recipient's username"
-									aria-label="Recipient's username"
-									aria-describedby="button-addon2"
-								/>
-								<div className="input-group-append">
+						<div>
+							<form onSubmit={this._handleClick}>
+								<div className="search-box" style={this.state.searchboxStyle}>
+									<div className="textbox">
+										<input
+											onChange={e => this.setState({ searchInput: e.target.value })}
+											type="text"
+											name="search"
+											ref={f => (this._searchBox = f)}
+											placeholder="Search"
+											autoComplete="off"
+											onFocus={this._handleTextFocus}
+											onBlur={this._handleTextBlur}
+											className="auto-expand"
+										/>
+									</div>
 									<button
-										onClick={() => actions.searchMovie(this.state.searchInput)}
-										className="btn-floating btn-lg btn-default"
-										type="button"
-										id="button-addon2">
-										<i className="fas fa-search fa-2x" />
+										className="search-button"
+										onClick={() => actions.searchMovie(this.state.searchInput)}>
+										<span className="icon" />
 									</button>
 								</div>
-							</div>
-						</>
+							</form>
+						</div>
 					);
 				}}
 			</Context.Consumer>
