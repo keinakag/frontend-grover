@@ -53,12 +53,20 @@
   border: 3px solid #4281e3;
 }
 
+#infomovie h2{
+   font-size: 38px; 
+}
+#infomovie h3{
+   font-size: 20.8px; 
+   
+   padding-top: 48px;
 
+}
 
 #infomovie
  {
- position: absolute;
-    top: 25px;
+ position: relative;
+    top: 123px;
     left: 848px;
     width: 656px;
     height: 100%;

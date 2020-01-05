@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Groverlogo from "../../img/groverlogo.png";
 import "../../styles/home.scss";
-
+import BeautyStars from "beauty-stars";
 import Searchbar from "../component/searchbar";
 import Searchbk from "../../img/searchbk.png";
 import Slider from "react-animated-slider";
@@ -34,8 +34,17 @@ export default class Jumbotron extends React.Component {
 											<div style={style} key={index} className="">
 												<div id="infomovie" className="">
 													<h2>{article.title}</h2>
-													<div>{article.vote_average}</div>
+													<h3>overview</h3>
 													<div>{article.overview}</div>
+
+													<div>
+														<BeautyStars
+															maxStars={10}
+															size="20px"
+															inactiveColor="#FFFFFF"
+															value={article.vote_average}
+														/>
+													</div>
 												</div>
 											</div>
 										);
