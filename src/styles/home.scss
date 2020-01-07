@@ -30,14 +30,14 @@
 .search-box button {
   display: inline-flex;
   border: none;
-  background: #42afe3;
+  background:#776CC9;
   color: #fff;
   padding: 0 10px;
   border-radius: 0 3px 3px 0;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
-  border: 3px solid #42afe3;
+  border: 3px solid #776CC9;
   font-size: 14px;
   cursor: pointer;
 }
@@ -49,8 +49,12 @@
   margin: 0 auto;
 }
 .search-box button:hover {
-  background: #4281e3;
-  border: 3px solid #4281e3;
+  background:rgb(158, 147, 243);
+  border: 3px solid rgb(158, 147, 243);
+}
+
+#stars{
+    padding-top: 30px;
 }
 
 #infomovie h2{

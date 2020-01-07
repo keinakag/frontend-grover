@@ -28,16 +28,20 @@ export default class Jumbotron extends React.Component {
 											})`,
 											backgroundRepeat: "no-repeat",
 											backgroundSize: "auto",
-											backgroundPosition: "500px"
+                                            backgroundPosition: "500px",
+                                            borderRadius=6
 										};
 										return (
 											<div style={style} key={index} className="">
 												<div id="infomovie" className="">
 													<h2>{article.title}</h2>
+													{article.popularity}
+													{article.original_language}
 													<h3>overview</h3>
 													<div>{article.overview}</div>
-
-													<div>
+													<h5 />
+													<div id="stars">
+														user Score
 														<BeautyStars
 															maxStars={10}
 															size="20px"
