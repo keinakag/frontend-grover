@@ -14,7 +14,7 @@ export class Search extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			value: vote_average
+			value: 0
 		};
 	}
 

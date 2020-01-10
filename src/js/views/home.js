@@ -20,11 +20,13 @@ export class Home extends React.Component {
 							</div>
 
 							<Jumbotron />
-
+							<div className="movies-title">
+								<h3>Movies</h3>
+							</div>
 							{store.search.length > 0 ? (
 								<SearchResult />
 							) : (
-								<div className="card-columns">
+								<div className="card-columns w-100 p-3">
 									<Cards />
 								</div>
 							)}

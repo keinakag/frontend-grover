@@ -17,7 +17,7 @@ export default class Cards extends React.Component {
 										store.moviesList.map((item, index) => {
 											return (
 												<div key={index} className="card mb-4">
-													<div className="card w-50 p-1 h-50 p-1">
+													<div className="view overlay">
 														<img
 															className="card-img-top"
 															src={"https://image.tmdb.org/t/p/w342" + item.poster_path}
@@ -27,10 +27,10 @@ export default class Cards extends React.Component {
 															<div className="mask rgba-white-slight" />
 														</a>
 													</div>
-													<div className="card-body">
+													{/* <div className="card-body">
 														<h4 className="card-title">{item.title}</h4>
 														<p className="card-text">{item.overview}</p>
-													</div>
+													</div> */}
 												</div>
 											);
 										})}

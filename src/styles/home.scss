@@ -1,3 +1,21 @@
+.card-columns{
+-webkit-column-break-inside: avoid;
+  columns: 210px;
+  -webkit-column-gap: 5em;
+}
+
+
+.movies-title{
+    font-size: 30px;
+    font-family: Helvetica;
+    color: rgb(19, 11, 126);
+    position: relative;
+    box-sizing: content-box;
+    padding-left: 27px;
+    padding-top: 70px;
+    
+}
+
 .search-box {
   display: flex;
   margin: 15px 0;
@@ -8,11 +26,13 @@
   height: 40px;
   transition: all 100ms ease-in-out;
 }
+
 .search-box .textbox {
   min-width: 80%;
-  border: 1px solid #bbb;
+//   border: 1px solid #bbb;
   border-right: 0;
   border-radius: 3px 0 0 3px;
+  
 }
 .search-box .textbox input[type=text] {
   width: 100%;
@@ -23,14 +43,18 @@
   font-weight: 500;
   outline: none;
   background: transparent;
+  color: white
 }
 .search-box .textboxinput[type=text]:focus {
-  background: #fff;
+      background: rgb(243, 244, 248);
+    opacity: 0.6;
+
 }
 .search-box button {
   display: inline-flex;
   border: none;
   background:#776CC9;
+ 
   color: #fff;
   padding: 0 10px;
   border-radius: 0 3px 3px 0;

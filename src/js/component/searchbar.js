@@ -10,7 +10,7 @@ export default class Searchbar extends React.Component {
 		this.state = {
 			searchboxStyle: {
 				width: "120px",
-				background: "#eee"
+				background: "tranparent"
 			}
 		};
 
@@ -28,7 +28,7 @@ export default class Searchbar extends React.Component {
 		this.setState({
 			searchboxStyle: {
 				width: "100%",
-				background: "#fff"
+				background: "tranparent"
 			}
 		});
 	}
@@ -39,7 +39,7 @@ export default class Searchbar extends React.Component {
 			this.setState({
 				searchboxStyle: {
 					width: "120px",
-					background: "#eee"
+					background: "tranparent"
 				}
 			});
 	}
@@ -62,7 +62,7 @@ export default class Searchbar extends React.Component {
 											type="text"
 											name="search"
 											ref={f => (this._searchBox = f)}
-											placeholder="Search"
+											placeholder="SEARCH"
 											autoComplete="off"
 											onFocus={this._handleTextFocus}
 											onBlur={this._handleTextBlur}
