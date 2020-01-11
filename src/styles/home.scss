@@ -76,10 +76,22 @@
   background:rgb(158, 147, 243);
   border: 3px solid rgb(158, 147, 243);
 }
+.badge{
+    margin-top: 7px
+}
 
 #stars{
-    padding-top: 30px;
+    padding-top: 11px;
+    font-size: 15px
 }
+
+#infomovie p{
+    float: right;
+    position: relative;
+   top: -16px;
+    right: 341px;
+}
+
 
 #infomovie h2{
    font-size: 38px; 

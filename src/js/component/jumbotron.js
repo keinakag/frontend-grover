@@ -34,20 +34,23 @@ export default class Jumbotron extends React.Component {
 											<div style={style} key={index} className="">
 												<div id="infomovie" className="">
 													<h2>{article.title}</h2>
-													{article.popularity}
-													{article.original_language}
-													<h3>overview</h3>
-													<div>{article.overview}</div>
-													<h5 />
 													<div id="stars">
 														user Score
 														<BeautyStars
 															maxStars={10}
-															size="20px"
+															size="10px"
 															inactiveColor="#FFFFFF"
 															value={article.vote_average}
 														/>
+														<p>({article.popularity})</p>
 													</div>
+
+													<span className="badge badge-info">
+														{article.original_language}
+													</span>
+
+													<h3>overview</h3>
+													<div>{article.overview}</div>
 												</div>
 											</div>
 										);
