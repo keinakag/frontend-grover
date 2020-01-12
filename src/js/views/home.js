@@ -1,5 +1,6 @@
 import React from "react";
 import Cards from "../component/cards";
+import Tvcards from "../component/tvcards";
 import "../../styles/home.scss";
 import Jumbotron from "../component/jumbotron";
 import Navbar from "../component/navbar";
@@ -14,7 +15,7 @@ export class Home extends React.Component {
 			<Context.Consumer>
 				{({ store }) => {
 					return (
-						<div>
+						<div className="home">
 							<div>
 								<Navbar />
 							</div>
@@ -30,6 +31,12 @@ export class Home extends React.Component {
 									<Cards />
 								</div>
 							)}
+							<div className="tv-title">
+								<h3>Tv Shows</h3>
+							</div>
+							<div className="card-columns w-100 p-3">
+								<Tvcards />
+							</div>
 						</div>
 					);
 				}}

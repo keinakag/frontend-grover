@@ -20,7 +20,7 @@ export default class Cards extends React.Component {
 													<div className="view overlay">
 														<img
 															className="card-img-top"
-															src={"https://image.tmdb.org/t/p/w342" + item.poster_path}
+															src={"https://image.tmdb.org/t/p/w500" + item.poster_path}
 															alt="Card image cap"
 														/>
 														<a href="#!">

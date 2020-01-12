@@ -38,8 +38,10 @@ export default class Jumbotron extends React.Component {
 														user Score
 														<BeautyStars
 															maxStars={10}
-															size="10px"
-															inactiveColor="#FFFFFF"
+															editable={false}
+															size="17px"
+															inactiveColor="transparent"
+															border="1px"
 															value={article.vote_average}
 														/>
 														<p>({article.popularity})</p>

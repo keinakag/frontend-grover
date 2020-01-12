@@ -44,6 +44,23 @@ const injectContext = PassedComponent => {
 					this.setState({ store });
 				});
 
+			fetch(
+				"https://api.themoviedb.org/3/tv/popular?api_key=0beadf5c5313d0827299b97696f289a0&language=en-US&page=1",
+				{
+					headers: {
+						"Content-type": "application/json",
+						authorization:
+							"Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYmVhZGY1YzUzMTNkMDgyNzI5OWI5NzY5NmYyODlhMCIsInN1YiI6IjVkZDQ0OTEwMzU2YTcxMDAxN2VkOGRhMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tPvMezqB7ee7kV42Z5Rqu1T0c7wWl5srBEtqzccI_DE"
+					}
+				}
+			)
+				.then(response => response.json())
+				.then(data => {
+					let { store } = this.state;
+					store.tvList = data.results;
+					this.setState({ store });
+				});
+
 			// this.setState({ isModalOpen: false });
 			/**
 			 * EDIT THIS!

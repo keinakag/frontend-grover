@@ -1,24 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Groverlogo from "../../img/groverlogo.png";
-import "../../styles/home.scss";
-import BeautyStars from "beauty-stars";
-import Searchbar from "../component/searchbar";
-import Searchbk from "../../img/searchbk.png";
-import Slider from "react-animated-slider";
-import "react-animated-slider/build/horizontal.css";
 import { Context } from "../store/appContext.js";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { MDBContainer } from "mdbreact";
 
-export class Search extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			value: 0
-		};
-	}
-
+export default class Tvcards extends React.Component {
 	render() {
 		return (
 			<MDBContainer>

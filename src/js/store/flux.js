@@ -10,7 +10,9 @@ const getState = ({ getStore, setStore }) => {
 			logUser: null,
 			movies: [],
 			search: [],
-			moviesList: []
+			listabusca: [],
+			moviesList: [],
+			tvList: []
 		},
 		actions: {
 			searchMovie: searchInput => {
@@ -29,6 +31,24 @@ const getState = ({ getStore, setStore }) => {
 				)
 					.then(response => response.json())
 					.then(data => setStore({ search: data.results }))
+					.catch(err => {
+						console.log(err);
+					});
+			},
+			buscar: buscarInput => {
+				fetch(
+					"https://api.themoviedb.org/3/search/movie/?api_key=0beadf5c5313d0827299b97696f289a0&query=" +
+						buscarInput,
+					{
+						headers: {
+							"Content-type": "application/json",
+							authorization:
+								"Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYmVhZGY1YzUzMTNkMDgyNzI5OWI5NzY5NmYyODlhMCIsInN1YiI6IjVkZDQ0OTEwMzU2YTcxMDAxN2VkOGRhMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tPvMezqB7ee7kV42Z5Rqu1T0c7wWl5srBEtqzccI_DE"
+						}
+					}
+				)
+					.then(response => response.json())
+					.then(data => setStore({ listabusca: data.results }))
 					.catch(err => {
 						console.log(err);
 					});
