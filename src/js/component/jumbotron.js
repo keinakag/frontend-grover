@@ -28,7 +28,9 @@ export default class Jumbotron extends React.Component {
 											})`,
 											backgroundRepeat: "no-repeat",
 											backgroundSize: "auto",
-											backgroundPosition: "500px"
+											backgroundPosition: "500px",
+											overflow: "hidden",
+											borderRadius: 50
 										};
 										return (
 											<div style={style} key={index} className="">

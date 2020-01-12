@@ -1,3 +1,21 @@
+.view {
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    border-radius: 28px;
+}
+#tvcards{
+    overflow: hidden;
+    border-radius:30px;
+    background: black
+}
+
+#moviecards{
+    overflow: hidden;
+    border-radius:30px;
+    background: black
+}
+
 .home{
     background:#024752
 }
@@ -85,7 +103,8 @@
   height: 24px;
   margin: 0 auto;
 }
-.search-box button:hover {
+
+rch-box button:hover {
   background:#eb9b33;
   border: 3px solid #eb9b33;
 }

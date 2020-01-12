@@ -15,7 +15,12 @@ export class SearchResult extends React.Component {
 							<>
 								{store.search != undefined &&
 									store.search.map((item, index) => {
-										return <div key={index}>{item.name}</div>;
+										return (
+											<div key={index} className="results">
+												<h2>{item.name}</h2>
+												<h1>{item.display_name}</h1>
+											</div>
+										);
 									})}
 							</>
 						);

@@ -16,7 +16,7 @@ export default class Cards extends React.Component {
 									{store.moviesList != undefined &&
 										store.moviesList.map((item, index) => {
 											return (
-												<div key={index} className="card mb-4">
+												<div id="moviecards" key={index} className="card mb-4">
 													<div className="view overlay">
 														<img
 															className="card-img-top"
