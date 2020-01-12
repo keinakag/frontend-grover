@@ -35,7 +35,6 @@ export default class Jumbotron extends React.Component {
 												<div id="infomovie" className="">
 													<h2>{article.title}</h2>
 													<div id="stars">
-														user Score
 														<BeautyStars
 															maxStars={10}
 															editable={false}
