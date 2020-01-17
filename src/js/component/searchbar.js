@@ -69,7 +69,7 @@ export default class Searchbar extends React.Component {
 											className="auto-expand"
 										/>
 									</div>
-									<Link to="/search">
+									<Link to="/text">
 										<button
 											className="search-button"
 											onClick={() => actions.searchMovie(this.state.searchInput)}>
