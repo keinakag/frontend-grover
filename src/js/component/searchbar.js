@@ -69,11 +69,13 @@ export default class Searchbar extends React.Component {
 											className="auto-expand"
 										/>
 									</div>
-									<button
-										className="search-button"
-										onClick={() => actions.searchMovie(this.state.searchInput)}>
-										<span className="icon" />
-									</button>
+									<Link to="/search">
+										<button
+											className="search-button"
+											onClick={() => actions.searchMovie(this.state.searchInput)}>
+											<span className="icon" />
+										</button>
+									</Link>
 								</div>
 							</form>
 						</div>

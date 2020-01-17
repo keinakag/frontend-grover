@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { MDBContainer } from "mdbreact";
+import image from "../../img/rigo-baby.jpg";
 
 export default class Cards extends React.Component {
 	render() {
@@ -18,11 +19,21 @@ export default class Cards extends React.Component {
 											return (
 												<div id="moviecards" key={index} className="card mb-4">
 													<div className="view overlay">
-														<img
-															className="card-img-top"
-															src={"https://image.tmdb.org/t/p/w500" + item.poster_path}
-															alt="Card image cap"
-														/>
+														{item.poster_path ? (
+															<img
+																className="card-img-top"
+																src={
+																	"https://image.tmdb.org/t/p/w342" + item.poster_path
+																}
+																alt="Card image cap"
+															/>
+														) : (
+															<img
+																className="card-img-top"
+																src={image}
+																alt="Card image cap"
+															/>
+														)}
 														<a href="#!">
 															<div className="mask rgba-white-slight" />
 														</a>

@@ -2,6 +2,7 @@ import React from "react";
 import Cards from "../component/cards";
 import Tvcards from "../component/tvcards";
 import "../../styles/home.scss";
+import { Link } from "react-router-dom";
 import Jumbotron from "../component/jumbotron";
 import Navbar from "../component/navbar";
 import { withRouter } from "react-router-dom";
@@ -19,18 +20,13 @@ export class Home extends React.Component {
 							<div>
 								<Navbar />
 							</div>
-
 							<Jumbotron />
 							<div className="movies-title">
 								<h3>Movies</h3>
 							</div>
-							{store.search.length > 0 ? (
-								<SearchResult />
-							) : (
-								<div className="card-columns w-100 p-3">
-									<Cards />
-								</div>
-							)}
+							<div className="card-columns w-100 p-3">
+								<Cards />
+							</div>
 							<div className="tv-title">
 								<h3>Tv Shows</h3>
 							</div>
