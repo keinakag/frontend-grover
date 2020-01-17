@@ -19,8 +19,9 @@ class Stickynab extends React.Component {
 								id="exampleModal"
 								tabIndex="-1"
 								role="dialog"
+								data-dismiss="modal"
 								aria-labelledby="exampleModalLabel"
-								data-backdrop="false"
+								data-backdrop="true"
 								aria-hidden="true">
 								<div className="modal-dialog" role="document">
 									<div className="modal-content">
@@ -102,13 +103,13 @@ class Stickynab extends React.Component {
 									<img style={{ width: "10%", height: "10%" }} src={Groverlogo} />
 								</p>
 
-								<p
+								<a
 									id="log"
-									className="navbar-text pull-right"
+									// className="navbar-text pull-right"
 									data-toggle="modal"
 									data-target="#exampleModal">
 									<strong>LOG IN</strong>
-								</p>
+								</a>
 							</nav>
 						</div>
 					);

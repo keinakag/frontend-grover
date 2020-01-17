@@ -34,7 +34,7 @@ export default class Cards extends React.Component {
 																alt="Card image cap"
 															/>
 														)}
-														<a href="#!">
+														<a href={item}>
 															<div className="mask rgba-white-slight" />
 														</a>
 													</div>

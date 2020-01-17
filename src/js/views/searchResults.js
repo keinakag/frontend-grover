@@ -44,7 +44,6 @@ export class SearchResult extends React.Component {
 																	href={item.url}
 																	target="_blank"
 																	rel="noopener noreferrer">
-																	{/* href={item.url}> */}
 																	<div>{item.display_name}</div>
 																</a>
 															</>
