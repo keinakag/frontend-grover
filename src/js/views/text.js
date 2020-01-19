@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/home.scss";
 import Searchbar from "../component/searchbar";
+
 import Searchbk from "../../img/searchbk.png";
 import { Context } from "../store/appContext.js";
 import Navbar from "../component/navbar";
@@ -57,10 +58,29 @@ export class Text extends React.Component {
 											<i className="fas fa-search" />
 										</button>
 									</Link>
-									<MDBBtn color="secondary" onClick={this.toggle(11)}>
+									<button color="secondary" onClick={this.toggle(11)}>
 										Close
-									</MDBBtn>
+									</button>
 								</MDBFormInline>
+
+								{/* <div className="row">
+														<div className="row__inner">
+															<div className="tile">
+																<div className="tile__media">
+																	<img
+																		key={index}
+																		className="tile__img"
+																		src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-1.jpg"
+																		alt=""
+																	/>
+																</div>
+																<div className="tile__details">
+																	<div className="tile__title">Top Gear</div>
+																</div>
+															</div>
+														</div>
+                                                    </div> */}
+								<SearchResult />
 							</MDBModal>
 						</MDBContainer>
 					);

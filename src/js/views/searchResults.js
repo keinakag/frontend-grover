@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBBtn } from "mdbreact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Groverlogo from "../../img/groverlogo.png";
 import "../../styles/home.scss";
