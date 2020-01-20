@@ -19,7 +19,7 @@ export class SearchResult extends React.Component {
 										store.search.map((item, index) => {
 											return (
 												<>
-													<div key={item.id} className="col-3">
+													<div key={item.id} className="col-md-1">
 														<section id="section1">
 															<a href="#section3" className="arrow__btn">
 																‹
