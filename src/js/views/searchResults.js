@@ -14,26 +14,27 @@ export class SearchResult extends React.Component {
 					{({ store, actions }) => {
 						return (
 							<>
-								{store.search != undefined &&
-									store.search.map((item, index) => {
-										return (
-											<>
-												<div key={index.id} className="wrapper">
-													<section id="section1">
-														<a href="#section3" className="arrow__btn">
-															‹
-														</a>
-														<div className="item">
-															<img
-																src={item.picture}
-																alt={item.name}
-																style={{ width: "400px" }}
-															/>
-														</div>
-													</section>
-												</div>
+								<div className="row">
+									{store.search != undefined &&
+										store.search.map((item, index) => {
+											return (
+												<>
+													<div key={item.id} className="col-3">
+														<section id="section1">
+															<a href="#section3" className="arrow__btn">
+																‹
+															</a>
+															<div className="item">
+																<img
+																	src={item.picture}
+																	alt={item.name}
+																	style={{ width: "400px" }}
+																/>
+															</div>
+														</section>
+													</div>
 
-												{/* <div className="view overlay">
+													{/* <div className="view overlay">
 														{item.picture ? (
 															<img
 																className="card-img-top"
@@ -51,22 +52,23 @@ export class SearchResult extends React.Component {
 															<div className="mask rgba-white-slight" />
 														</a>
 													</div> */}
-												{item.locations.map((item, index) => {
-													return (
-														<>
-															<a
-																key={index}
-																href={item.url}
-																target="_blank"
-																rel="noopener noreferrer">
-																<div>{item.display_name}</div>
-															</a>
-														</>
-													);
-												})}
-											</>
-										);
-									})}
+													{item.locations.map((item, index) => {
+														return (
+															<>
+																<a
+																	key={index}
+																	href={item.url}
+																	target="_blank"
+																	rel="noopener noreferrer">
+																	<div>{item.display_name}</div>
+																</a>
+															</>
+														);
+													})}
+												</>
+											);
+										})}
+								</div>
 							</>
 						);
 					}}

@@ -20,7 +20,7 @@ export class Layout extends React.Component {
 
 		return (
 			<div className="d-flex flex-column h-100">
-				<BrowserRouter basename={basename}>
+				<BrowserRouter>
 					<ScrollToTop>
 						<Switch>
 							<Route exact path="/" component={Main} />

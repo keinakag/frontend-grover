@@ -15,9 +15,7 @@ class Navbar extends React.Component {
 					return (
 						<nav id="sticky" className="navbar navbar-expand-lg fixed-top scrolling-navbar">
 							<Link to="/home">
-								<a className="navbar-brand">
-									<img style={{ width: "10%", height: "10%" }} src={Groverlogo} />
-								</a>
+								<img style={{ width: "10%", height: "10%" }} src={Groverlogo} />
 							</Link>
 							<Searchbar />
 

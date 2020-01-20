@@ -22,40 +22,69 @@ export default class Jumbotron extends React.Component {
 							<div id="carrusel" className="wrapper">
 								<Slider>
 									{store.moviesList.map((article, index) => {
-										const style = {
+										const styleBig = {
 											backgroundImage: `url(https://image.tmdb.org/t/p/w300${
 												article.poster_path
 											})`,
 											backgroundRepeat: "no-repeat",
-											backgroundSize: "auto",
-											backgroundPosition: "500px",
+											backgroundSize: "cover",
+											backgroundPosition: "center",
+											overflow: "hidden"
+										};
+										const styleSmall = {
+											backgroundImage: `url(https://image.tmdb.org/t/p/w300${
+												article.poster_path
+											})`,
+											backgroundRepeat: "no-repeat",
+											backgroundSize: "500px",
+											backgroundPosition: "center",
 											overflow: "hidden",
-											borderRadius: 50
+											borderRadius: 50,
+											height: "100px"
 										};
 										return (
-											<div style={style} key={index} className="">
-												<div id="infomovie" className="">
-													<h2>{article.title}</h2>
-													<div id="stars">
-														<BeautyStars
-															maxStars={10}
-															editable={false}
-															size="17px"
-															inactiveColor="transparent"
-															border="1px"
-															value={article.vote_average}
-														/>
-														<p>({article.popularity})</p>
+											<>
+												<div style={styleBig} key={index} className="">
+													<div id="infomovie" className="">
+														<div style={styleSmall} />
+														<h2>{article.title}</h2>
+														<div id="stars">
+															<BeautyStars
+																maxStars={10}
+																editable={false}
+																size="17px"
+																inactiveColor="transparent"
+																border="1px"
+																value={article.vote_average}
+															/>
+															<p>({article.popularity})</p>
+														</div>
+
+														<span className="badge badge-info">
+															{article.original_language}
+														</span>
+
+														<h3>overview</h3>
+														<div>{article.overview}</div>
 													</div>
-
-													<span className="badge badge-info">
-														{article.original_language}
-													</span>
-
-													<h3>overview</h3>
-													<div>{article.overview}</div>
 												</div>
-											</div>
+
+												<div className="container">
+													<div className="row">
+														<div className="col-sm-9">
+															Level 1: .col-sm-9
+															<div className="row">
+																<div className="col-8 col-sm-6">
+																	Level 2: .col-8 .col-sm-6
+																</div>
+																<div className="col-4 col-sm-6">
+																	Level 2: .col-4 .col-sm-6
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</>
 										);
 									})}
 								</Slider>

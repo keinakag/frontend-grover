@@ -44,6 +44,7 @@ export class Text extends React.Component {
 							<MDBModal isOpen={this.state.modal11} toggle={this.toggle(11)} frame position="top">
 								<MDBFormInline className="md-form mr-auto mb-4">
 									<input
+										align="center"
 										className="form-control mr-sm-2"
 										type="text"
 										placeholder="Search"
