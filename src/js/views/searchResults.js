@@ -18,8 +18,22 @@ export class SearchResult extends React.Component {
 									store.search.map((item, index) => {
 										return (
 											<>
-												<div id="tvcards" key={index} className="card mb-4">
-													<div className="view overlay">
+												<div key={index.id} className="wrapper">
+													<section id="section1">
+														<a href="#section3" className="arrow__btn">
+															‹
+														</a>
+														<div className="item">
+															<img
+																src={item.picture}
+																alt={item.name}
+																style={{ width: "400px" }}
+															/>
+														</div>
+													</section>
+												</div>
+
+												{/* <div className="view overlay">
 														{item.picture ? (
 															<img
 																className="card-img-top"
@@ -36,21 +50,20 @@ export class SearchResult extends React.Component {
 														<a href="#!">
 															<div className="mask rgba-white-slight" />
 														</a>
-													</div>
-													{item.locations.map((item, index) => {
-														return (
-															<>
-																<a
-																	key={index}
-																	href={item.url}
-																	target="_blank"
-																	rel="noopener noreferrer">
-																	<div>{item.display_name}</div>
-																</a>
-															</>
-														);
-													})}
-												</div>
+													</div> */}
+												{item.locations.map((item, index) => {
+													return (
+														<>
+															<a
+																key={index}
+																href={item.url}
+																target="_blank"
+																rel="noopener noreferrer">
+																<div>{item.display_name}</div>
+															</a>
+														</>
+													);
+												})}
 											</>
 										);
 									})}
