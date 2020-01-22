@@ -36,55 +36,35 @@ export default class Jumbotron extends React.Component {
 												article.poster_path
 											})`,
 											backgroundRepeat: "no-repeat",
-											backgroundSize: "500px",
+											backgroundSize: "250px",
 											backgroundPosition: "center",
-											overflow: "hidden",
-											borderRadius: 50,
-											height: "100px"
+											overflow: "hidden"
 										};
 										return (
-											<>
-												<div style={styleBig} key={index} className="">
-													<div id="infomovie" className="">
-														<div style={styleSmall} />
-														<h2>{article.title}</h2>
-														<div id="stars">
-															<BeautyStars
-																maxStars={10}
-																editable={false}
-																size="17px"
-																inactiveColor="transparent"
-																border="1px"
-																value={article.vote_average}
-															/>
-															<p>({article.popularity})</p>
-														</div>
-
-														<span className="badge badge-info">
-															{article.original_language}
-														</span>
-
-														<h3>overview</h3>
-														<div>{article.overview}</div>
+											<div style={styleBig} key={index} className="row justify-content-center">
+												<div className="col-2" style={styleSmall} />
+												<div id="infomovie" className="col-4">
+													<h2>{article.title}</h2>
+													<div id="stars">
+														<BeautyStars
+															maxStars={10}
+															editable={false}
+															size="17px"
+															inactiveColor="transparent"
+															border="1px"
+															value={article.vote_average}
+														/>
+														<p>({article.popularity})</p>
 													</div>
-												</div>
 
-												<div className="container">
-													<div className="row">
-														<div className="col-sm-9">
-															Level 1: .col-sm-9
-															<div className="row">
-																<div className="col-8 col-sm-6">
-																	Level 2: .col-8 .col-sm-6
-																</div>
-																<div className="col-4 col-sm-6">
-																	Level 2: .col-4 .col-sm-6
-																</div>
-															</div>
-														</div>
-													</div>
+													<span className="badge badge-info">
+														{article.original_language}
+													</span>
+
+													<h3>overview</h3>
+													<div>{article.overview}</div>
 												</div>
-											</>
+											</div>
 										);
 									})}
 								</Slider>

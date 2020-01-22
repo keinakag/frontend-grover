@@ -141,16 +141,14 @@ rch-box button:hover {
 
 #infomovie
  {
- position: relative;
+position: relative;
     top: 123px;
-    left: 848px;
-    width: 656px;
-    height: 100%;
-    color:#f8f9fa;
+    
+    color: #f8f9fa;
 }
 @media (max-width: 768px) {
   #infomovie {
-    float: right;
+    
   }
 }
 .slider{
