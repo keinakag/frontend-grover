@@ -12,7 +12,9 @@ export default class CardsPng extends React.Component {
 				<div className="row justify-content-center">
 					<div className="col-8">
 						<div className="card-deck ">
-							<div className="card  border-0" style={{ backgroundColor: "transparent" }}>
+							<div
+								className="card  border-0"
+								style={{ backgroundColor: "transparent", textAlign: "center" }}>
 								<img src="..." className="card-img-top" alt="..." />
 								<div className="card-body ">
 									<h3 className="card-title">TV</h3>
@@ -27,7 +29,9 @@ export default class CardsPng extends React.Component {
 									</p>
 								</div>
 							</div>
-							<div className="card border-0" style={{ backgroundColor: "transparent" }}>
+							<div
+								className="card border-0"
+								style={{ backgroundColor: "transparent", textAlign: "center" }}>
 								<img src="..." className="card-img-top" alt="..." />
 								<div className="card-body border-0">
 									<h3 className="card-title">Computer</h3>
@@ -38,7 +42,9 @@ export default class CardsPng extends React.Component {
 									</p>
 								</div>
 							</div>
-							<div className="card border-0" style={{ backgroundColor: "transparent" }}>
+							<div
+								className="card border-0"
+								style={{ backgroundColor: "transparent", textAlign: "center" }}>
 								<img src="..." className="card-img-top" alt="..." />
 								<div className="card-body">
 									<h3 className="card-title">Mobile & Tablet</h3>
