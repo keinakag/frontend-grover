@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/home.scss";
 import Mainjumbo from "../component/mainjumbo";
 import Maincards from "../component/maincards";
+import CardsPng from "../component/cardsPng";
 import Stickynab from "../component/stickynab";
 import Footer from "../component/footer";
 
@@ -19,6 +20,9 @@ export class Main extends React.Component {
 				</div>
 				<div>
 					<Maincards />
+				</div>
+				<div>
+					<CardsPng />
 				</div>
 				<div>
 					<Footer />
