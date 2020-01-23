@@ -34,6 +34,7 @@ export class Home extends React.Component {
 							<div className="card-columns w-100 p-3">
 								<Tvcards />
 							</div>
+							<hr className="rgba-white-light" style={{ margin: "0 0" }} />
 							<div>
 								<Footer />
 							</div>
