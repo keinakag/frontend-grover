@@ -34,36 +34,41 @@ export class Text extends React.Component {
 				{({ store, actions }) => {
 					return (
 						<MDBContainer>
-							<button
-								color="secondary"
-								onClick={this.toggle(11)}
-								type="button"
-								className="btn btn-default btn-circle btn-xl">
-								<i className="fas fa-search" />
-							</button>
-							<MDBModal isOpen={this.state.modal11} toggle={this.toggle(11)} frame position="top">
-								<MDBFormInline className="md-form mr-auto mb-4">
-									<input
-										align="center"
-										className="form-control mr-sm-2"
-										type="text"
-										placeholder="Search"
-										aria-label="Search"
-										onChange={e => this.setState({ searchInput: e.target.value })}
-									/>
-									<Link to="/text">
-										<button
-											type="button"
-											className="btn btn-default btn-circle btn-xl"
-											onClick={() => actions.searchMovie(this.state.searchInput)}>
-											<i className="fas fa-search" />
-										</button>
-									</Link>
-									<button color="secondary" onClick={this.toggle(11)}>
-										Close
-									</button>
-								</MDBFormInline>
+							<i className="fas fa-search" style={{ cursor: "pointer" }} onClick={this.toggle(11)} />
 
+							<MDBModal isOpen={this.state.modal11} toggle={this.toggle(11)} frame position="top">
+								<div className="row justify-content-end">
+									<div className="col-8">
+										<MDBFormInline className="md-form mr-auto mb-4">
+											<input
+												style={{
+													fontSize: "30px",
+													width: "450px"
+												}}
+												align="center"
+												className="form-control mr-sm-2"
+												type="text"
+												placeholder="Search for Movies or Tv Shows"
+												aria-label="Search"
+												onChange={e => this.setState({ searchInput: e.target.value })}
+											/>
+											<div className="col-4 ">
+												<Link to="/text">
+													<i
+														className="fas fa-search"
+														onClick={() => actions.searchMovie(this.state.searchInput)}
+													/>
+												</Link>
+
+												<i
+													className="fas fa-times"
+													style={{ cursor: "pointer" }}
+													onClick={this.toggle(11)}
+												/>
+											</div>
+										</MDBFormInline>
+									</div>
+								</div>
 								<SearchResult />
 							</MDBModal>
 						</MDBContainer>
