@@ -14,12 +14,12 @@ export class SearchResult extends React.Component {
 					{({ store, actions }) => {
 						return (
 							<>
-								<div className="row">
+								<div className="d-flex align-items-stretch">
 									{store.search != undefined &&
 										store.search.map((item, index) => {
 											return (
 												<>
-													<div key={item.id} className="col-md-1">
+													<div key={item.id} className="d-flex mb-3">
 														<section id="section1">
 															<a href="#section3" className="arrow__btn">
 																‹
