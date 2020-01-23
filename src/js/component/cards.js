@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { MDBContainer } from "mdbreact";
-import image from "../../img/rigo-baby.jpg";
+import Image from "../../img/rigo-baby.jpg";
 
 export default class Cards extends React.Component {
 	render() {
@@ -30,7 +30,7 @@ export default class Cards extends React.Component {
 														) : (
 															<img
 																className="card-img-top"
-																src={image}
+																src={Image}
 																alt="Card image cap"
 															/>
 														)}

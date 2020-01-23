@@ -1,4 +1,7 @@
-	
+.blur{
+    filter: blur(2px);
+    background:white
+}	
 .view {
     position: relative;
     overflow: hidden;
@@ -143,7 +146,7 @@ rch-box button:hover {
  {
 position: relative;
     top: 123px;
-    
+    opacity: 1;
     color: #f8f9fa;
 }
 @media (max-width: 768px) {
@@ -158,7 +161,9 @@ position: relative;
 
 #carrusel{
    height: 600px;
-    background: midnightblue;
+   
+    
+    
 }
 
 .fa-envelope {

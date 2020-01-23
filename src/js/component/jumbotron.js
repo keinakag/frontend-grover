@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Groverlogo from "../../img/groverlogo.png";
+import Mask from "../../img/mask.png";
 import "../../styles/home.scss";
 import BeautyStars from "beauty-stars";
 import Searchbar from "../component/searchbar";
@@ -23,13 +24,14 @@ export default class Jumbotron extends React.Component {
 								<Slider>
 									{store.moviesList.map((article, index) => {
 										const styleBig = {
-											backgroundImage: `url(https://image.tmdb.org/t/p/w300${
+											backgroundImage: `url(https://image.tmdb.org/t/p/original${
 												article.poster_path
 											})`,
 											backgroundRepeat: "no-repeat",
 											backgroundSize: "cover",
 											backgroundPosition: "center",
-											overflow: "hidden"
+											overflow: "hidden",
+											filter: blur(4)
 										};
 										const styleSmall = {
 											backgroundImage: `url(https://image.tmdb.org/t/p/w300${
@@ -38,10 +40,24 @@ export default class Jumbotron extends React.Component {
 											backgroundRepeat: "no-repeat",
 											backgroundSize: "250px",
 											backgroundPosition: "center",
-											overflow: "hidden"
+											overflow: "hidden",
+											padding: "0"
 										};
+
 										return (
-											<div style={styleBig} key={index} className="row justify-content-center">
+											<div key={index} style={styleBig} className="row justify-content-center">
+												<span>
+													<img
+														style={{
+															position: "absolute",
+															widht: "100%",
+															left: "243px",
+															bottom: "-36px",
+															filter: blur(1)
+														}}
+														src={Mask}
+													/>
+												</span>
 												<div className="col-2" style={styleSmall} />
 												<div id="infomovie" className="col-4">
 													<h2>{article.title}</h2>
