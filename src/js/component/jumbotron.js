@@ -51,9 +51,10 @@ export default class Jumbotron extends React.Component {
 														style={{
 															position: "absolute",
 															widht: "100%",
-															left: "243px",
-															bottom: "-36px",
-															filter: blur(1)
+															right: "-33px",
+
+															backgroundColor: "teal",
+															opacity: 0.6
 														}}
 														src={Mask}
 													/>

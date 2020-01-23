@@ -10,6 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Context } from "../store/appContext";
 import Searchbar from "../component/searchbar";
 import { SearchResult } from "./searchResults";
+import Footer from "../component/footer";
 export class Home extends React.Component {
 	render() {
 		return (
@@ -32,6 +33,9 @@ export class Home extends React.Component {
 							</div>
 							<div className="card-columns w-100 p-3">
 								<Tvcards />
+							</div>
+							<div>
+								<Footer />
 							</div>
 						</div>
 					);
