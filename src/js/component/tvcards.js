@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { MDBContainer } from "mdbreact";
-import image from "../../img/rigo-baby.jpg";
+import rigoImage from "../../img/rigo-baby.jpg";
 export default class Tvcards extends React.Component {
 	render() {
 		return (
@@ -29,7 +29,7 @@ export default class Tvcards extends React.Component {
 														) : (
 															<img
 																className="card-img-top"
-																src={image}
+																src={rigoImage}
 																alt="Card image cap"
 															/>
 														)}

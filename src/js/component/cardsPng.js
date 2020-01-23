@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { MDBContainer } from "mdbreact";
-import Image from "../../img/rigo-baby.jpg";
+import rigoImage from "../../img/rigo-baby.jpg";
 
 export default class CardsPng extends React.Component {
 	render() {
@@ -15,7 +15,7 @@ export default class CardsPng extends React.Component {
 							<div
 								className="card  border-0"
 								style={{ backgroundColor: "transparent", textAlign: "center" }}>
-								<img src="..." className="card-img-top" alt="..." />
+								<img src={rigoImage} className="card-img-top" alt="..." />
 								<div className="card-body ">
 									<h3 className="card-title">TV</h3>
 									<p className="card-text">
