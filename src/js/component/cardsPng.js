@@ -10,7 +10,7 @@ import Tvlogo from "../../img/tvlogo.png";
 export default class CardsPng extends React.Component {
 	render() {
 		return (
-			<div className="w-auto">
+			<div className="w-auto custom">
 				<section className="text-center my-5">
 					<h2 className="white-text text-center w-responsive mx-auto mb-5" style={{ fontSize: "40px" }}>
 						Available on your favorite devices

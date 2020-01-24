@@ -10,6 +10,7 @@ import Navbar from "./component/navbar";
 import Footer from "./component/footer";
 import { Search } from "./views/search";
 import { Text } from "./views/text";
+import { Details } from "./views/details";
 
 //create your first component
 export class Layout extends React.Component {
@@ -29,6 +30,7 @@ export class Layout extends React.Component {
 							<Route path="/search" component={Search} />
 							<Route path="/text" component={Text} />
 							<Route path="/single/:theid" component={Single} />
+							<Route path="/details/:theindex" component={Details} />
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>
 					</ScrollToTop>

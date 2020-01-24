@@ -12,18 +12,14 @@ export class Main extends React.Component {
 	render() {
 		return (
 			<div className="maindiv">
-				<div>
-					<Stickynab />
-				</div>
-				<div>
-					<Mainjumbo />
-				</div>
-				<div>
-					<Maincards />
-				</div>
-				<div>
-					<CardsPng />
-				</div>
+				<Stickynab />
+
+				<Mainjumbo />
+
+				<Maincards />
+
+				<CardsPng />
+
 				<hr className="rgba-white-light" style={{ margin: "0 0" }} />
 				<div>
 					<Footer />

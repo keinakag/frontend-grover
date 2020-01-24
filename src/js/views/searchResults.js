@@ -20,18 +20,20 @@ export class SearchResult extends React.Component {
 											return (
 												<>
 													<div key={item.id} className="peli d-flex mb-3">
-														<div className="item">
-															<img
-																src={item.picture}
-																alt={item.name}
-																style={{
-																	width: "400px",
-																	flex: 1,
-																	aspectRatio: 1.5,
-																	resizeMode: "contain"
-																}}
-															/>
-														</div>
+														<Link to={"/details/" + index}>
+															<div className="item">
+																<img
+																	src={item.picture}
+																	alt={item.name}
+																	style={{
+																		width: "400px",
+																		flex: 1,
+																		aspectRatio: 1.5,
+																		resizeMode: "contain"
+																	}}
+																/>
+															</div>
+														</Link>
 													</div>
 													{/* 
 													{item.locations.map((item, index) => {
