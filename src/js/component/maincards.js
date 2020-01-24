@@ -9,8 +9,10 @@ export default class Maincards extends React.Component {
 			<MDBContainer>
 				<div className="w-auto">
 					<section className="text-center my-5">
-						<h1 className="h1-responsive font-weight-bold-grey-text text-center my-5">WHY GROVER?</h1>
-						<h2 className="grey-text text-center w-responsive mx-auto mb-5">
+						<h1 className="h1-responsive text-center my-5" style={{ color: "white" }}>
+							WHY GROVER?
+						</h1>
+						<h2 className="white-text text-center w-responsive mx-auto mb-5">
 							No contracts, commitments, or equipment rentals.
 						</h2>
 						<MDBRow>

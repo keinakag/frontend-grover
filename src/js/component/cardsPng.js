@@ -12,7 +12,7 @@ export default class CardsPng extends React.Component {
 		return (
 			<div className="w-auto">
 				<section className="text-center my-5">
-					<h2 className="grey-text text-center w-responsive mx-auto mb-5" style={{ fontSize: "40px" }}>
+					<h2 className="white-text text-center w-responsive mx-auto mb-5" style={{ fontSize: "40px" }}>
 						Available on your favorite devices
 					</h2>
 				</section>
@@ -31,8 +31,10 @@ export default class CardsPng extends React.Component {
 										style={{ width: "237px" }}
 									/>
 									<div className="card-body ">
-										<h3 className="card-title">TV</h3>
-										<p className="card-text">
+										<h3 className="card-title" style={{ color: "white" }}>
+											TV
+										</h3>
+										<p className="card-text" style={{ color: "grey" }}>
 											<p>Amazon Fire TV</p>
 											<p>Android TV </p>
 											<p>AppleTV </p>
@@ -53,8 +55,10 @@ export default class CardsPng extends React.Component {
 										style={{ width: "248px" }}
 									/>
 									<div className="card-body border-0">
-										<h3 className="card-title">Computer</h3>
-										<p className="card-text">
+										<h3 className="card-title" style={{ color: "white" }}>
+											Computer
+										</h3>
+										<p className="card-text" style={{ color: "grey" }}>
 											<p>Chrome OS</p>
 											<p>MacOS</p>
 											<p> Windows PC</p>
@@ -71,8 +75,10 @@ export default class CardsPng extends React.Component {
 										style={{ width: "150px" }}
 									/>
 									<div className="card-body">
-										<h3 className="card-title">Mobile & Tablet</h3>
-										<p className="card-text">
+										<h3 className="card-title" style={{ color: "white" }}>
+											Mobile & Tablet
+										</h3>
+										<p className="card-text" style={{ color: "grey" }}>
 											<p>Amazon Fire Tablets</p>
 											<p>Android Phones & Tablets</p>
 											<p>iPhone and iPad</p>

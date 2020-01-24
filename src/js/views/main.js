@@ -24,6 +24,7 @@ export class Main extends React.Component {
 				<div>
 					<CardsPng />
 				</div>
+				<hr className="rgba-white-light" style={{ margin: "0 0" }} />
 				<div>
 					<Footer />
 				</div>
