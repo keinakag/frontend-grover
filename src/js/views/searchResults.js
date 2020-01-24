@@ -9,49 +9,31 @@ import image from "../../img/rigo-baby.jpg";
 export class SearchResult extends React.Component {
 	render() {
 		return (
-			<div className="container-fluid ">
+			<div className="container-fluid " style={{ background: "#024752" }}>
 				<Context.Consumer>
 					{({ store, actions }) => {
 						return (
 							<>
-								<div className="d-flex align-items-stretch">
+								<div className="filapeli d-flex align-items-stretch" style={{ background: "#024752" }}>
 									{store.search != undefined &&
 										store.search.map((item, index) => {
 											return (
 												<>
-													<div key={item.id} className="d-flex mb-3">
-														<section id="section1">
-															<a href="#section3" className="arrow__btn">
-																‹
-															</a>
-															<div className="item">
-																<img
-																	src={item.picture}
-																	alt={item.name}
-																	style={{ width: "400px" }}
-																/>
-															</div>
-														</section>
-													</div>
-
-													{/* <div className="view overlay">
-														{item.picture ? (
+													<div key={item.id} className="peli d-flex mb-3">
+														<div className="item">
 															<img
-																className="card-img-top"
 																src={item.picture}
-																alt="Card image cap"
+																alt={item.name}
+																style={{
+																	width: "400px",
+																	flex: 1,
+																	aspectRatio: 1.5,
+																	resizeMode: "contain"
+																}}
 															/>
-														) : (
-															<img
-																className="card-img-top"
-																src={image}
-																alt="Card image cap"
-															/>
-														)}
-														<a href="#!">
-															<div className="mask rgba-white-slight" />
-														</a>
-													</div> */}
+														</div>
+													</div>
+													{/* 
 													{item.locations.map((item, index) => {
 														return (
 															<>
@@ -64,7 +46,7 @@ export class SearchResult extends React.Component {
 																</a>
 															</>
 														);
-													})}
+													})} */}
 												</>
 											);
 										})}
