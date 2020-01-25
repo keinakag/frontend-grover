@@ -26,9 +26,9 @@ export default class CardsPng extends React.Component {
 									style={{ backgroundColor: "#024752", textAlign: "center" }}>
 									<img
 										src={Tvlogo}
-										className="card-img-top smallimg mx-auto pt-4"
+										className="card-img-top  img-fluid smallimg mx-auto pt-4"
 										alt="..."
-										style={{ width: "237px" }}
+										style={{ width: "237px", display: "block" }}
 									/>
 									<div className="card-body ">
 										<h3 className="card-title" style={{ color: "white" }}>
@@ -48,9 +48,9 @@ export default class CardsPng extends React.Component {
 								<div className="card png" style={{ backgroundColor: "#024752", textAlign: "center" }}>
 									<img
 										src={Laptop}
-										className="card-img-top smallimg mx-auto pt-4"
+										className="card-img-top  img-fluid smallimg mx-auto pt-4"
 										alt="..."
-										style={{ width: "248px" }}
+										style={{ width: "237px", display: "block" }}
 									/>
 									<div className="card-body border-0">
 										<h3 className="card-title" style={{ color: "white" }}>
@@ -66,9 +66,9 @@ export default class CardsPng extends React.Component {
 								<div className="card png" style={{ backgroundColor: "#024752", textAlign: "center" }}>
 									<img
 										src={Tablet}
-										className="card-img-top smallimg mx-auto pt-4"
+										className="card-img-top img-fluid smallimg mx-auto pt-4"
 										alt="..."
-										style={{ width: "150px" }}
+										style={{ width: "150px", display: "block" }}
 									/>
 									<div className="card-body">
 										<h3 className="card-title" style={{ color: "white" }}>

@@ -1,12 +1,21 @@
-$dark: #20222d;
-$light: #cfcebc;
-$shadow-light: rgba(255,255,255,0.05);
-$shadow-dark: rgba(0,0,0,0.2);
 
+.w3-button{
+    box-shadow: -6px -5px 10px 0px #02505c inset, 5px 5px 20px 0px #023e48 inset;
+ margin-bottom: 20px
+}
+
+#btnhover:hover {
+ background-color:#024752 !important;
+}
+
+#main3{
+    box-shadow: 16px 16px 9px 0#023e48 , -16px -16px 9px 0 #02505c; 
+    margin-right:100px            
+}
 
 .card-deck .png{    
-box-shadow: 16px 16px 9px 0#023e48 , -16px -16px 9px 0 #02505c, 
-            
+box-shadow: 16px 16px 9px 0#023e48 , -16px -16px 9px 0 #02505c; 
+            margin-right:100px 
 }
 
 .w-auto.custom {
