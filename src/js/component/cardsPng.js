@@ -10,7 +10,7 @@ import Tvlogo from "../../img/tvlogo.png";
 export default class CardsPng extends React.Component {
 	render() {
 		return (
-			<div className="w-auto custom">
+			<div className="w-auto custom ">
 				<section className="text-center my-5">
 					<h2 className="white-text text-center w-responsive mx-auto mb-5" style={{ fontSize: "40px" }}>
 						Available on your favorite devices
@@ -22,11 +22,11 @@ export default class CardsPng extends React.Component {
 						<div className="col-8">
 							<div className="card-deck ">
 								<div
-									className="card  h-100 border-0"
-									style={{ backgroundColor: "transparent", textAlign: "center" }}>
+									className="card png h-100 "
+									style={{ backgroundColor: "#024752", textAlign: "center" }}>
 									<img
 										src={Tvlogo}
-										className="card-img-top smallimg mx-auto"
+										className="card-img-top smallimg mx-auto pt-4"
 										alt="..."
 										style={{ width: "237px" }}
 									/>
@@ -45,12 +45,10 @@ export default class CardsPng extends React.Component {
 										</p>
 									</div>
 								</div>
-								<div
-									className="card border-0"
-									style={{ backgroundColor: "transparent", textAlign: "center" }}>
+								<div className="card png" style={{ backgroundColor: "#024752", textAlign: "center" }}>
 									<img
 										src={Laptop}
-										className="card-img-top smallimg mx-auto"
+										className="card-img-top smallimg mx-auto pt-4"
 										alt="..."
 										style={{ width: "248px" }}
 									/>
@@ -65,12 +63,10 @@ export default class CardsPng extends React.Component {
 										</p>
 									</div>
 								</div>
-								<div
-									className="card border-0"
-									style={{ backgroundColor: "transparent", textAlign: "center" }}>
+								<div className="card png" style={{ backgroundColor: "#024752", textAlign: "center" }}>
 									<img
 										src={Tablet}
-										className="card-img-top smallimg mx-auto"
+										className="card-img-top smallimg mx-auto pt-4"
 										alt="..."
 										style={{ width: "150px" }}
 									/>

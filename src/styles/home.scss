@@ -1,5 +1,17 @@
+$dark: #20222d;
+$light: #cfcebc;
+$shadow-light: rgba(255,255,255,0.05);
+$shadow-dark: rgba(0,0,0,0.2);
+
+
+.card-deck .png{    
+box-shadow: 16px 16px 9px 0#023e48 , -16px -16px 9px 0 #02505c, 
+            
+}
+
 .w-auto.custom {
     margin-top: 128px;
+    margin-bottom: 100px
 }
 
 .peli {
