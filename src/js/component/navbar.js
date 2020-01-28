@@ -17,7 +17,7 @@ class Navbar extends React.Component {
 							<Link to="/home">
 								<img style={{ width: "10%", height: "10%" }} src={Groverlogo} />
 							</Link>
-							{/* <Searchbar /> */}
+							<Searchbar />
 
 							<ul className="navbar-nav ml-auto nav-flex-icons">
 								<li id="avatar" className="nav-item avatar dropdown">

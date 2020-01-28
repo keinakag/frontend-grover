@@ -18,15 +18,13 @@ export class Details extends React.Component {
 					let item = store.search[this.props.match.params.theindex];
 					return (
 						<>
-							<Navbar />
-							<div>{item.name}</div>
-							{item.locations.map((i, index) => {
-								return <div key={index}>{i.display_name}</div>;
-							})}
 							<div className="flex-container">
-								<div className="row">
+								<div className="flex-container" style={{ background: " #02505c", height: "85px" }}>
+									<Navbar />
+								</div>
+								<div className="row" style={{}}>
 									<div className="col-4 left" style={{ height: "600px" }}>
-										<h1>hol</h1>
+										<div>{item.name}</div>
 									</div>
 									<div className="col-8 right" style={{ height: "600px" }}>
 										<div>
@@ -43,6 +41,10 @@ export class Details extends React.Component {
 											/>
 										</div>
 									</div>
+
+									{item.locations.map((i, index) => {
+										return <div key={index}>{i.display_name}</div>;
+									})}
 								</div>
 							</div>
 						</>
