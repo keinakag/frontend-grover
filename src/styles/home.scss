@@ -13,7 +13,7 @@
     margin-right:100px            
 }
 
-.card-deck .png{    
+#png{    
 box-shadow: 16px 16px 9px 0#023e48 , -16px -16px 9px 0 #02505c; 
             margin-right:100px 
 }
@@ -73,11 +73,10 @@ box-shadow: 16px 16px 9px 0#023e48 , -16px -16px 9px 0 #02505c;
     background:#024752
 }
 
-.card-columns{
--webkit-column-break-inside: avoid;
-  columns: 210px;
-  -webkit-column-gap: 8em;
-}
+.card-columns {
+    -webkit-column-break-inside: avoid;
+    columns: 214px;
+    -webkit-column-gap: 8em;}
 
 .tv-title{
     font-size: 30px;
