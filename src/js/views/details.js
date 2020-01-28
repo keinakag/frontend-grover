@@ -18,10 +18,33 @@ export class Details extends React.Component {
 					let item = store.search[this.props.match.params.theindex];
 					return (
 						<>
+							<Navbar />
 							<div>{item.name}</div>
 							{item.locations.map((i, index) => {
 								return <div key={index}>{i.display_name}</div>;
 							})}
+							<div className="flex-container">
+								<div className="row">
+									<div className="col-4 left" style={{ height: "600px" }}>
+										<h1>hol</h1>
+									</div>
+									<div className="col-8 right" style={{ height: "600px" }}>
+										<div>
+											<img
+												src={item.picture}
+												alt={item.name}
+												style={{
+													width: "100%",
+													height: "600px",
+													flex: 1,
+													aspectRatio: 1.5,
+													resizeMode: "contain"
+												}}
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
 						</>
 					);
 				}}

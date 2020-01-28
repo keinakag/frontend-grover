@@ -1,4 +1,28 @@
+.left {
+  background: black;
+  width: 30%;
+  position: relative;
+}
 
+.left:before {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(to right,#000,transparent);
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 275px;
+}
+
+.right {
+  background:transparent;
+  padding: 0px
+  
+}
+
+
+
+//front page cards//
 .w3-button{
     box-shadow: -6px -5px 10px 0px #02505c inset, 5px 5px 20px 0px #023e48 inset;
  margin-bottom: 20px
@@ -23,6 +47,8 @@ box-shadow: 16px 16px 9px 0#023e48 , -16px -16px 9px 0 #02505c;
     margin-bottom: 100px
 }
 
+
+// home page jumbotron//
 .peli {
   display: flex;
   padding: 0 55px;
