@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/home.scss";
 import Searchbar from "../component/searchbar";
 import PropTypes from "prop-types";
-
 import Searchbk from "../../img/searchbk.png";
 import { Context } from "../store/appContext.js";
 import Navbar from "../component/navbar";
@@ -23,8 +22,8 @@ export class Details extends React.Component {
 									<Navbar />
 								</div>
 								<div className="row" style={{}}>
-									<div className="col-4 left" style={{ height: "600px" }}>
-										<div>{item.name}</div>
+									<div className="col-4 left p-0" style={{ height: "600px" }}>
+										<h1 style={{ color: "white", textAlign: "center" }}>{item.name}</h1>
 									</div>
 									<div className="col-8 right" style={{ height: "600px" }}>
 										<div>
