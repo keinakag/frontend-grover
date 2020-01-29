@@ -56,7 +56,7 @@ export default class Searchbar extends React.Component {
 						<div>
 							<form onSubmit={this._handleClick}>
 								<div className="search-box" style={this.state.searchboxStyle}>
-									<div className="textbox">
+									{/* <div className="textbox">
 										<input
 											onChange={e => this.setState({ searchInput: e.target.value })}
 											type="text"
@@ -68,13 +68,21 @@ export default class Searchbar extends React.Component {
 											onBlur={this._handleTextBlur}
 											className="auto-expand"
 										/>
-									</div>
+									</div> */}
 									<Link to="/text">
-										<button
+										{/* <button
 											className="search-button"
 											onClick={() => actions.searchMovie(this.state.searchInput)}>
 											<span className="icon" />
-										</button>
+										</button> */}
+										<div className="row justify-content-end">
+											<div className="col-3">
+												<i
+													className="fas fa-search"
+													style={{ cursor: "pointer", fontSize: "35px", color: "#E48B18" }}
+												/>
+											</div>
+										</div>
 									</Link>
 								</div>
 							</form>

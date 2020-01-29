@@ -23,7 +23,29 @@ export class Details extends React.Component {
 								</div>
 								<div className="row" style={{}}>
 									<div className="col-4 left p-0" style={{ height: "600px" }}>
-										<h1 style={{ color: "white", textAlign: "center" }}>{item.name}</h1>
+										<h1
+											style={{
+												color: "white",
+												textAlign: "left",
+												marginTop: "34px",
+												marginLeft: "49px"
+											}}>
+											{item.name}
+										</h1>
+
+										{item.locations.map((item, index) => {
+											return (
+												<>
+													<a
+														key={index}
+														href={item.url}
+														target="_blank"
+														rel="noopener noreferrer">
+														<MDBBtn color="amber">{item.display_name}</MDBBtn>
+													</a>
+												</>
+											);
+										})}
 									</div>
 									<div className="col-8 right" style={{ height: "600px" }}>
 										<div>
@@ -40,10 +62,6 @@ export class Details extends React.Component {
 											/>
 										</div>
 									</div>
-
-									{item.locations.map((i, index) => {
-										return <div key={index}>{i.display_name}</div>;
-									})}
 								</div>
 							</div>
 						</>
