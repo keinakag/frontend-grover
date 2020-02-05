@@ -34,7 +34,7 @@ export default class CardsPng extends React.Component {
 									<h3 className="card-title" style={{ color: "white" }}>
 										TV
 									</h3>
-									<p className="card-text" style={{ color: "grey" }}>
+									<p className="card-text" style={{ color: "white" }}>
 										<p>Amazon Fire TV</p>
 										<p>Android TV </p>
 										<p>AppleTV </p>
@@ -61,7 +61,7 @@ export default class CardsPng extends React.Component {
 									<h3 className="card-title" style={{ color: "white" }}>
 										Computer
 									</h3>
-									<p className="card-text" style={{ color: "grey" }}>
+									<p className="card-text" style={{ color: "white" }}>
 										<p>Chrome OS</p>
 										<p>MacOS</p>
 										<p> Windows PC</p>
@@ -84,7 +84,7 @@ export default class CardsPng extends React.Component {
 									<h3 className="card-title" style={{ color: "white" }}>
 										Mobile & Tablet
 									</h3>
-									<p className="card-text" style={{ color: "grey" }}>
+									<p className="card-text" style={{ color: "white" }}>
 										<p>Amazon Fire Tablets</p>
 										<p>Android Phones & Tablets</p>
 										<p>iPhone and iPad</p>

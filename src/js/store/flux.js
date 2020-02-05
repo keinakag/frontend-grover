@@ -58,9 +58,9 @@ const getState = ({ getStore, setStore }) => {
 				let logUser = store.users2.find(item => {
 					return item.email == email && item.password == password;
 				});
-				fetch("https://3000-b598d4a4-b550-4f48-9647-c68992f1dab2.ws-us02.gitpod.io/login", {
+				fetch("https://3000-feee9da2-fb49-4e80-8eaa-2fca63d485a5.ws-us02.gitpod.io/login", {
 					method: "POST",
-					headers: { "Content-type": "application/json" },
+					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify({
 						email: email,
 						password: password
@@ -84,9 +84,10 @@ const getState = ({ getStore, setStore }) => {
 			},
 
 			registerUser: (email, password, username, birthday, gender) => {
-				fetch(process.env.HOST + "/person", {
+				console.log(email, password, username, birthday, gender);
+				fetch("https://3000-feee9da2-fb49-4e80-8eaa-2fca63d485a5.ws-us02.gitpod.io/person", {
 					method: "POST",
-					headers: { "Content-type": "application/json" },
+					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify({
 						birthday: birthday,
 						email: email,

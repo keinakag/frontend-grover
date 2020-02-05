@@ -33,9 +33,9 @@ export default class Tvcards extends React.Component {
 																alt="Card image cap"
 															/>
 														)}
-														<a href="#!">
+														<Link to={"/details/" + index}>
 															<div className="mask rgba-white-slight" />
-														</a>
+														</Link>
 													</div>
 													{/* <div className="card-body">
                                                         <h4 className="card-title">{item.title}</h4>

@@ -15,9 +15,11 @@ export default class Registration extends React.Component {
 						<div>
 							<div className="registracion">
 								<nav id="sticky" className="navbar navbar-expand-lg fixed-top scrolling-navbar">
-									<p>
-										<img style={{ width: "10%", height: "10%" }} src={Groverlogo} />
-									</p>
+									<Link to="/">
+										<span>
+											<img style={{ width: "10%", height: "10%" }} src={Groverlogo} />
+										</span>
+									</Link>
 
 									<span id="log">
 										<Link to={"/"}>
@@ -29,7 +31,7 @@ export default class Registration extends React.Component {
 									<div className="row">
 										<div className="col-md-4 col-sm-4 col-xs-12" />
 										<div className="col-md-4 col-sm-4 col-xs-12">
-											<form className="form-container">
+											<div className="form-container">
 												<div className="form-group">
 													<label htmlFor="exampleInputEmail1">Email address</label>
 													<input
@@ -126,21 +128,23 @@ export default class Registration extends React.Component {
 														</a>
 													</p>
 												</div>
-												<button
-													type="submit"
-													onClick={() =>
-														actions.registerUser(
-															document.querySelector("#InputEmail").value,
-															document.querySelector("#InputPassword").value,
-															document.querySelector("#InputUsername").value,
-															document.querySelector("#Birthday").value,
-															document.querySelector("#InputGender").value
-														)
-													}
-													className="btn blue-gradient btn-lg btn-block mt-0">
-													Submit
-												</button>
-											</form>
+												<Link to="/">
+													<button
+														type="submit"
+														onClick={() =>
+															actions.registerUser(
+																document.querySelector("#InputEmail").value,
+																document.querySelector("#InputPassword").value,
+																document.querySelector("#InputUsername").value,
+																document.querySelector("#Birthday").value,
+																document.querySelector("#InputGender").value
+															)
+														}
+														className="btn blue-gradient btn-lg btn-block mt-0">
+														Submit
+													</button>
+												</Link>
+											</div>
 										</div>
 									</div>
 								</div>

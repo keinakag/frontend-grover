@@ -34,9 +34,9 @@ export default class Cards extends React.Component {
 																alt="Card image cap"
 															/>
 														)}
-														<a href={item}>
+														<Link to={"/details/" + index}>
 															<div className="mask rgba-white-slight" />
-														</a>
+														</Link>
 													</div>
 													{/* <div className="card-body">
 														<h4 className="card-title">{item.title}</h4>
